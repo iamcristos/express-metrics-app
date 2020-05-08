@@ -1,7 +1,11 @@
-const express = require('express');
-const cors = require('cors');
-const helmet = require('helmet');
-const logger = require('morgan');
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import logger from 'morgan';
+import model from './model';
+
+
+console.log(model.getMetric());
 
 
 const app = express();
