@@ -1,8 +1,8 @@
 import model from '../model';
 
 class Metrics {
-  static getMetrics(req, res) {
-    const value = model.getMetric();
+  static async getMetrics(req, res) {
+    const value = await model.getMetric();
     return res.status(200).json({ value });
   }
 
