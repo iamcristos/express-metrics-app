@@ -29,9 +29,5 @@ class Model {
     return Math.round(sum);
   }
 }
-const ONE_HOUR = 60 * 60 * 1000; /* ms */
-const arr = [{ time: Date.now() + ONE_HOUR + 0.11 * 1000, value: 12 },
-  { time: Date.now() + ONE_HOUR, value: 12 },
-  { time: 1588977178118, value: 12 }, { time: Date.now(), value: 2 },
-  { time: Date.now(), value: 12 }];
-export default new Model(arr);
+
+export default new Model();
