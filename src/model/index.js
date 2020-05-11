@@ -20,7 +20,7 @@ class Model {
 
     const db = this.db.filter((item) => {
       if (Model.checkDate(item.time)) {
-        sum += item.value;
+        sum += (+item.value);
         return item;
       }
       return false;
